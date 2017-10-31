@@ -1,14 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { SpotifyRoutingModule } from './app-router';
 
+import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { BuscarComponent } from './buscar/buscar.component';
+
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    BuscarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SpotifyRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+
+<form class="form-group" #formulario="ngForm" (ngSubmit)="consultarArtista(formulario)">
+
+  <input [(ngModel)]="buscar" name="buscarOtro" type="text"  class="form-control" placeholder="Busca tu artista favorito">
+  <input type="submit" class="button">
+</form>
